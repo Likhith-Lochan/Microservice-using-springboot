@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Behavioral</title>
+</head>
+<body>
+<h1>Behavioral Assessment Registration</h1>
+
+<form name="add" action="/adddata" method="post">
+<table>
+<tr><td><label>UserId :</label></td></tr>
+<tr><td><input type="text" name="userid" required/></td></tr>
+<tr><td><label>Select Exam :</label></td></tr>
+<tr><td><select name = "test">
+<option value = "stepplus" >Step Plus</option>
+<option value = "emailetiquette">Email Etiquette</option>
+<option value = "learningagility" >Learning Agility</option>
+<option value = "speakingskills" >Speaking Skills</option>
+<option value = "interactionskills">Interaction Skills</option>
+<option value = "businessenglish">Business English</option>
+<option value = "emerge">Emerge</option>
+</select></td></tr>
+
+<tr><td><label>Date   :</label></td></tr>
+<tr><td><input type="date" name="date" min="2023-02-25" max="2023-03-15"/></td></tr>
+</table>
+<input type="submit" name="register" value="register"/>
+
+
+</form>
+
+
+</body>
+</html>

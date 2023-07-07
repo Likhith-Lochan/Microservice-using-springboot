@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Technical</title>
+</head>
+<body>
+
+<h1>Technical Assessment Registration</h1>
+<form name="add" action="/adddata" method="post">
+<table>
+<tr><td><label>UserId :</label></td></tr>
+<tr><td><input type="text" name="userid" id="userid" required/></td></tr>
+<tr><td><label>Select Exam :</label></td></tr>
+<tr><td><select name = "test" id="test">
+<option value = "java" >Java</option>
+<option value = "springboot">SpringBoot</option>
+<option value = "microservices" >MicroServices</option>
+<option value = "C#" >C#</option>
+<option value = "php">PHP</option>
+<option value = "perl">PERL</option>
+<option value = "python">Python</option>
+</select></td></tr>
+
+<tr><td><label>Date   :</label></td></tr>
+<tr><td><input type="date" name="date" id="date" min="2023-02-25" max="2023-03-15"/></td></tr>
+</table>
+<input type="submit" name="register" value="register"/>
+
+
+</form>
+</body>
+</html>

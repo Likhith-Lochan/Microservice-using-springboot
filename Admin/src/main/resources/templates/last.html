@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Registrations</title>
+</head>
+
+<body>
+<h1>List of All Registrations</h1>
+<table border="1">
+<tr><th>User Id</th><th>Test Name</th><th>Test Date</th></tr>
+<tr th:each="ed: ${empModel}" >
+	<td th:text="${ed.userid}"></td>
+	<td th:text="${ed.test}"></td> 
+	<td th:text="${ed.date}"></td> 
+</tr>
+</table>
+
+</body>
+</html>
